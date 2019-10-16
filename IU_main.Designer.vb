@@ -39,22 +39,32 @@ Partial Class IU_main
         Me.BT_total.Name = "BT_total"
         Me.BT_total.Size = New System.Drawing.Size(77, 30)
         Me.BT_total.TabIndex = 0
-        Me.BT_total.Text = "A+B"
+        Me.BT_total.Text = "Somme"
         Me.BT_total.UseVisualStyleBackColor = True
         '
         'NUD_b
         '
+        Me.NUD_b.BackColor = System.Drawing.Color.White
+        Me.NUD_b.ForeColor = System.Drawing.Color.Black
         Me.NUD_b.Location = New System.Drawing.Point(171, 77)
+        Me.NUD_b.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
+        Me.NUD_b.Minimum = New Decimal(New Integer() {100000, 0, 0, -2147483648})
         Me.NUD_b.Name = "NUD_b"
         Me.NUD_b.Size = New System.Drawing.Size(120, 27)
         Me.NUD_b.TabIndex = 1
+        Me.NUD_b.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'NUD_a
         '
+        Me.NUD_a.BackColor = System.Drawing.Color.White
+        Me.NUD_a.ForeColor = System.Drawing.Color.Black
         Me.NUD_a.Location = New System.Drawing.Point(26, 77)
+        Me.NUD_a.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
+        Me.NUD_a.Minimum = New Decimal(New Integer() {100000, 0, 0, -2147483648})
         Me.NUD_a.Name = "NUD_a"
         Me.NUD_a.Size = New System.Drawing.Size(120, 27)
         Me.NUD_a.TabIndex = 1
+        Me.NUD_a.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'LB_resultat
         '
@@ -97,7 +107,7 @@ Partial Class IU_main
         Me.Controls.Add(Me.BT_total)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(383, 290)
         Me.Name = "IU_main"
