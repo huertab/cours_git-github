@@ -45,6 +45,7 @@ Partial Class IU_main
         'NUD_b
         '
         Me.NUD_b.BackColor = System.Drawing.Color.White
+        Me.NUD_b.DecimalPlaces = 2
         Me.NUD_b.ForeColor = System.Drawing.Color.Black
         Me.NUD_b.Location = New System.Drawing.Point(171, 77)
         Me.NUD_b.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
@@ -57,6 +58,7 @@ Partial Class IU_main
         'NUD_a
         '
         Me.NUD_a.BackColor = System.Drawing.Color.White
+        Me.NUD_a.DecimalPlaces = 2
         Me.NUD_a.ForeColor = System.Drawing.Color.Black
         Me.NUD_a.Location = New System.Drawing.Point(26, 77)
         Me.NUD_a.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
