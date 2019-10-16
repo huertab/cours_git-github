@@ -6,6 +6,16 @@
 
         '-- Initalisation des contrôles
         LB_resultat.Text = ""
+        NUD_a.Value = My.Settings.Val_A
+        NUD_b.Value = My.Settings.Val_B
+
+    End Sub
+
+    Private Sub IU_main_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+
+        '-- Enregistrement des données dans paramètres
+        My.Settings.Val_A = NUD_a.Value
+        My.Settings.Val_B = NUD_b.Value
 
     End Sub
 
@@ -47,8 +57,6 @@
         End If
 
     End Sub
-
-
 
 #End Region
 
